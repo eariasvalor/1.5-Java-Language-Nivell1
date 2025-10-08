@@ -2,6 +2,10 @@
 README — Nivell 1, Exercici 1
 ===========================================================
 
+ENUNCIAT DE L'EXERCICI
+-----------
+Crea una classe que llisti alfabèticament el contingut d'un directori rebut per paràmetre.
+
 DESCRIPCIÓ
 -----------
 Aquest programa mostra per pantalla el contingut d’un directori
