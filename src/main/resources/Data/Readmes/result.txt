@@ -1,4 +1,0 @@
-F: Readme_Ex1.txt. Last modified: 2025-10-08 11:16:30
-F: Readme_Ex2.txt. Last modified: 2025-10-08 11:16:04
-F: Readme_Ex3.txt. Last modified: 2025-10-08 12:34:23
-F: result.txt. Last modified: 2025-10-08 13:38:13

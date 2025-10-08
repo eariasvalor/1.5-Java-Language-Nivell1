@@ -1,11 +1,10 @@
 ===========================================================
-README — Nivell 1, Exercici 3
+README — Nivell 1, Exercici 4
 ===========================================================
 
 ENUNCIAT DE L'EXERCICI
 -----------
-Modifica l’exercici anterior. Ara, en lloc de mostrar el resultat
-per la pantalla, guarda el resultat en un fitxer TXT.
+Afegeix la funcionalitat de llegir qualsevol fitxer TXT i mostra el seu contingut per consola.
 
 DESCRIPCIÓ
 -----------
@@ -25,8 +24,8 @@ REQUISITS
   ├─ src/
   │   ├─ main/
   │   │   ├─ java/
-  │   │   │   └─ n1exercici3/
-  │   │   │       └─ N1Exercici3.java
+  │   │   │   └─ n1exercici4/
+  │   │   │       └─ N1Exercici4.java
   │   │   └─ resources/
   │   │       └─ data/          ← directori amb fitxers o subcarpetes de prova
 
@@ -39,11 +38,11 @@ Totes les comandes s’han d’executar des de la carpeta arrel del projecte.
 1. COMPILAR
 ------------------------------------------------------------
 
-javac -d out src/main/java/n1exercici3/N1Exercici3.java
+javac -d out src/main/java/n1exercici4/N1Exercici4.java
 
 
 ------------------------------------------------------------
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp out n1exercici3.N1Exercici3 src/main/resources/data
+java -cp out n1exercici4.N1Exercici4 src/main/resources/data/[nom de la carpeta] + [nom de l'arxiu que voleu llegir]
