@@ -20,15 +20,6 @@ public class N1Exercici3 {
             System.out.println("El directorio no existe o no es válido.");
         }
 
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(dirPath + "/result.txt"));
-            writer.write(listFilesRecursive(directory, 0).toString());
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
 
     }
 
