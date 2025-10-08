@@ -22,7 +22,7 @@ public class N1Exercici4 {
         File directory = new File(dirPath);
 
         if (directory.exists() && directory.isDirectory()) {
-            //printResult(dirPath, directory);
+            printResult(dirPath, directory);
             readTxtFile(dirPath, fileName);
         } else {
             System.out.println("Directory doesn't exist or is not valid.");
@@ -66,8 +66,11 @@ public class N1Exercici4 {
     }
 
     private static void printResult(String dirPath, File directory) {
+        new File(dirPath).mkdirs();
+        String resultFilePath = dirPath + File.separator + "result.txts";
+
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(dirPath + "/result.txt"));
+            BufferedWriter writer = new BufferedWriter(new FileWriter(resultFilePath));
             writer.write(listFilesRecursive(directory, 0).toString());
             writer.close();
         } catch (IOException e) {
