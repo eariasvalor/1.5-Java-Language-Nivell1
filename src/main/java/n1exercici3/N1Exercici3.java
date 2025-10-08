@@ -17,7 +17,7 @@ public class N1Exercici3 {
         if (directory.exists() && directory.isDirectory()) {
             printResult(dirPath, directory);
         } else {
-            System.out.println("El directorio no existe o no es válido.");
+            System.out.println("Directory doesn't exist or is not valid.");
         }
 
 
