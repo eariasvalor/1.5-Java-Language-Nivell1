@@ -33,14 +33,14 @@ REQUISITS
 - Java 17 o superior instal·lat i configurat al PATH.
 - El projecte segueix aquesta estructura:
 
-   project/
-  ├─ src/
-  │   ├─ main/
-  │   │   ├─ java/
-  │   │   │   └─ n1exercici[X]/
-  │   │   │       └─ N1Exercici[X].java
-  │   │   └─ resources/
-  │   │       └─ data/          ← directori amb fitxers o subcarpetes de prova
+   project/  
+  ├─ src/  
+  │   ├─ main/  
+  │   │   ├─ java/    
+  │   │   │   ├─ n1exercici[X]/    
+  │   │   │   │      ├─ N1Exercici[X].java  
+  │   │   ├─ resources/    
+  │   │   │   ├─ data/          ← directori amb fitxers o subcarpetes de prova
 
 
 COMANDES PER COMPILAR I EXECUTAR
