@@ -45,4 +45,4 @@ javac -d out src/main/java/n1exercici4/N1Exercici4.java
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp out n1exercici4.N1Exercici4 src/main/resources/data/[nom de la carpeta] + [nom de l'arxiu que voleu llegir]
+java -cp out n1exercici4.N1Exercici4 src/main/resources/data/Readmes/result.txt

@@ -8,25 +8,17 @@ import java.time.format.DateTimeFormatter;
 
 public class N1Exercici4 {
     public static void main(String[] args) {
-        String dirPath = (args.length > 0) ? args[0] : System.getProperty("user.dir") + File.separator + "Data";
-        String fileName = "";
+        String filePath = (args.length > 0) ? args[0] : System.getProperty("user.dir") + File.separator + "Data" + File.separator + "result.txt";
 
-        if (args.length > 0) {
-            dirPath = args[0];
+        File file = new File(filePath);
+        File directory = file.getParentFile();
+
+        if (directory == null || !directory.exists() || !directory.isDirectory()) {
+            System.out.println("Directory doesn't exist or is not valid: " + (directory != null ? directory.getPath() : "null"));
         }
 
-        if (args.length > 1) {
-            fileName = args[1];
-        }
-
-        File directory = new File(dirPath);
-
-        if (directory.exists() && directory.isDirectory()) {
-            printResult(dirPath, directory);
-            readTxtFile(dirPath, fileName);
-        } else {
-            System.out.println("Directory doesn't exist or is not valid.");
-        }
+        printResult(directory, file);
+        readTxtFile(file);
 
     }
 
@@ -65,34 +57,30 @@ public class N1Exercici4 {
         return lastModified.format(formatter);
     }
 
-    private static void printResult(String dirPath, File directory) {
-        new File(dirPath).mkdirs();
-        String resultFilePath = dirPath + File.separator + "result.txts";
+    private static void printResult(File directory, File resultFile) {
+        resultFile.getParentFile().mkdirs();
 
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(resultFilePath));
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(resultFile))) {
             writer.write(listFilesRecursive(directory, 0).toString());
-            writer.close();
+            System.out.println("Generated file: " + resultFile.getPath());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private static void readTxtFile(String dirPath, String fileName) {
-        String resultFilePath = dirPath + File.separator + fileName;
-        File file = new File(resultFilePath);
-
-        if(!file.exists()) {
+    private static void readTxtFile(File file) {
+        if (!file.exists()) {
             System.out.println("The file doesn't exist: " + file.getPath());
             return;
         }
-        if(!file.isFile()) {
-            System.out.println("The path doesn't match with a file: " + file.getPath());
+        if (!file.isFile()) {
+            System.out.println("The path doesn't correspond to any file: " + file.getPath());
+            return;
         }
 
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(file));
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
+            System.out.println("\n--- Content of " + file.getName() + " ---");
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }
