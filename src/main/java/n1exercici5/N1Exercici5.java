@@ -21,7 +21,6 @@ public class N1Exercici5 {
         readTxtFile(file);
 
         Worker worker1 = new Worker("John", 34);
-
         Worker[] workers = new Worker[3];
 
         workers[0] = worker1;
