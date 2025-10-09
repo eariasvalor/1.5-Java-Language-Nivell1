@@ -1,4 +1,4 @@
-# README — Nivell 1 - Exercicis1-5
+# README — Nivell 1 - Exercicis 1-5
 
 
 ENUNCIAT DELS EXERCICIS
