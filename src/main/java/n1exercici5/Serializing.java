@@ -1,8 +1,6 @@
 package n1exercici5;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class Serializing {
     public static void main (String[] args){
@@ -15,6 +13,7 @@ public class Serializing {
         workers[2] = new Worker("Peter", 65);
 
         serializeObject(workers);
+        deserializeObject("workers.txt");
 
     }
 
@@ -26,6 +25,19 @@ public class Serializing {
             writeFile.close();
 
         } catch (Exception e) {
+        }
+    }
+
+    public static void deserializeObject(String filePath){
+        try{
+            ObjectInputStream readFile = new ObjectInputStream(new FileInputStream(filePath));
+            Worker[] retrievedWorkers = (Worker[]) readFile.readObject();
+            readFile.close();
+            for (Worker w : retrievedWorkers){
+                System.out.println(w);
+            }
+        } catch (Exception e){
+
         }
     }
 }
