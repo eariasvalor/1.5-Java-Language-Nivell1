@@ -31,16 +31,10 @@ public class N1Exercici4 {
             for (File file : files) {
                 String formattedDate = formatLastModified(file.lastModified());
                 if (file.isDirectory()) {
-                    answer.append(indent)
-                            .append("D: ").append(file.getName())
-                            .append(". Last modified: ").append(formattedDate)
-                            .append("\n");
+                    answer.append(indent).append("D: ").append(file.getName()).append(". Last modified: ").append(formattedDate).append("\n");
                     answer.append(listFilesRecursive(file, level + 1));
                 } else {
-                    answer.append(indent)
-                            .append("F: ").append(file.getName())
-                            .append(". Last modified: ").append(formattedDate)
-                            .append("\n");
+                    answer.append(indent).append("F: ").append(file.getName()).append(". Last modified: ").append(formattedDate).append("\n");
                 }
             }
         }
@@ -49,10 +43,7 @@ public class N1Exercici4 {
     }
 
     private static String formatLastModified(long lastModifiedMillis) {
-        LocalDateTime lastModified = LocalDateTime.ofInstant(
-                Instant.ofEpochMilli(lastModifiedMillis),
-                ZoneId.systemDefault()
-        );
+        LocalDateTime lastModified = LocalDateTime.ofInstant(Instant.ofEpochMilli(lastModifiedMillis), ZoneId.systemDefault());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return lastModified.format(formatter);
     }

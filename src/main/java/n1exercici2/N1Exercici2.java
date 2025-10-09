@@ -37,10 +37,7 @@ public class N1Exercici2 {
     }
 
     private static String formatLastModified(long lastModifiedMillis) {
-        LocalDateTime lastModified = LocalDateTime.ofInstant(
-                Instant.ofEpochMilli(lastModifiedMillis),
-                ZoneId.systemDefault()
-        );
+        LocalDateTime lastModified = LocalDateTime.ofInstant(Instant.ofEpochMilli(lastModifiedMillis), ZoneId.systemDefault());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return lastModified.format(formatter);
     }
