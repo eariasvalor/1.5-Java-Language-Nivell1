@@ -38,11 +38,11 @@ Totes les comandes s’han d’executar des de la carpeta arrel del projecte.
 1. COMPILAR
 ------------------------------------------------------------
 
-javac -d out src/main/java/n1exercici5/N1Exercici5.java
+javac -d out src/main/java/n1exercici5/*.java
 
 
 ------------------------------------------------------------
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp out n1exercici5.N1Exercici5 src/main/resources/Data/Readmes/result.txt
+java -cp src/main/java n1exercici5.N1Exercici5 src/main/resources/Data/Readmes/result.txt
