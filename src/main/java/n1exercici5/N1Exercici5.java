@@ -2,7 +2,7 @@ package n1exercici5;
 
 import java.io.*;
 
-public class Serializing {
+public class N1Exercici5 {
     public static void main (String[] args){
         Worker worker1 = new Worker("John", 34);
 
