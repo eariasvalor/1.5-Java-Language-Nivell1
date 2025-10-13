@@ -14,7 +14,7 @@ public class N1Exercici2 {
         if (directory.exists() && directory.isDirectory()) {
             listFilesRecursive(directory, 0);
         } else {
-            System.out.println("El directorio no existe o no es válido.");
+            System.out.println("The directory doesn't exist or is not valid.");
         }
 
     }
