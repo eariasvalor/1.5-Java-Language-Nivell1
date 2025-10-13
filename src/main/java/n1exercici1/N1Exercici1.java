@@ -8,7 +8,7 @@ public class N1Exercici1 {
     public static void main(String[] args) {
         if (args.length == 0) {
             System.out.println("Error: please specify the directory path as an argument.");
-            System.out.println("Use: java n1exercici1.N1Exercici1 <directory_path>");
+            System.out.println("Please use: java n1exercici1.N1Exercici1 <directory_path>");
             return;
         }
 
