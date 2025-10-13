@@ -1,0 +1,16 @@
+D: Example_Files. Last modified: 2025-10-09 12:41:51
+  F: ExampleFile1.txt. Last modified: 2025-10-08 13:42:05
+  F: ExampleFile2.txt. Last modified: 2025-10-07 13:31:01
+  D: Sub_example_Files. Last modified: 2025-10-08 10:54:48
+    F: Sub_ExampleFile1.txt. Last modified: 2025-10-07 13:31:01
+D: Readmes. Last modified: 2025-10-13 12:25:33
+  F: Readme_Ex1.txt. Last modified: 2025-10-09 13:40:12
+  F: Readme_Ex2.txt. Last modified: 2025-10-08 11:16:04
+  F: Readme_Ex3.txt. Last modified: 2025-10-08 13:45:37
+  F: Readme_Ex4.txt. Last modified: 2025-10-09 11:19:17
+  F: Readme_Ex5.txt. Last modified: 2025-10-09 13:02:12
+  F: result.txt. Last modified: 2025-10-13 12:25:50
+F: result.txt. Last modified: 2025-10-13 12:40:07
+D: Test Files. Last modified: 2025-10-08 10:25:07
+  F: TestFile 1.txt. Last modified: 2025-10-07 13:30:51
+  F: TestFile 2.txt. Last modified: 2025-10-08 10:24:53
