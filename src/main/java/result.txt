@@ -1,0 +1,20 @@
+D: common_classes. Last modified: 2025-10-13 13:50:15
+  F: FormatLastModified.java. Last modified: 2025-10-13 13:23:04
+  F: ListFilesRecursive.java. Last modified: 2025-10-13 13:38:54
+  F: Printer.java. Last modified: 2025-10-13 13:36:04
+  F: Reading.java. Last modified: 2025-10-13 13:50:15
+  F: Writing.java. Last modified: 2025-10-13 13:50:15
+D: n1exercici1. Last modified: 2025-10-13 13:17:44
+  F: N1Exercici1.java. Last modified: 2025-10-13 13:17:44
+D: n1exercici2. Last modified: 2025-10-13 13:41:44
+  F: N1Exercici2.java. Last modified: 2025-10-13 13:41:44
+D: n1exercici3. Last modified: 2025-10-13 13:43:10
+  F: N1Exercici3.java. Last modified: 2025-10-13 13:43:10
+D: n1exercici4. Last modified: 2025-10-13 13:50:40
+  F: N1Exercici4.java. Last modified: 2025-10-13 13:50:40
+D: n1exercici5. Last modified: 2025-10-09 13:04:18
+  F: N1Exercici5.class. Last modified: 2025-10-09 12:55:00
+  F: N1Exercici5.java. Last modified: 2025-10-09 13:04:18
+  F: Worker.class. Last modified: 2025-10-09 12:55:00
+  F: Worker.java. Last modified: 2025-10-09 10:34:35
+F: result.txt. Last modified: 2025-10-13 13:52:26
