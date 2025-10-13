@@ -2,21 +2,26 @@ package common_classes;
 
 import java.io.File;
 
+import static common_classes.FormatLastModified.formatLastModified;
+
 public class ListFilesRecursive {
-    public static void listFilesRecursive(File directory, int level) {
+    public static StringBuilder listFilesRecursive(File directory, int level) {
         String indent = "  ".repeat(level);
         File[] files = directory.listFiles();
+        StringBuilder answer = new StringBuilder();
 
         if (files != null) {
             for (File file : files) {
-                String formattedDate = FormatLastModified.formatLastModified(file.lastModified());
+                String formattedDate = formatLastModified(file.lastModified());
                 if (file.isDirectory()) {
-                    System.out.println(indent + "D: " + file.getName() + ". Last modified: " + formattedDate);
-                    listFilesRecursive(file, level + 1);
+                    answer.append(indent).append("D: ").append(file.getName()).append(". Last modified: ").append(formattedDate).append("\n");
+                    answer.append(listFilesRecursive(file, level + 1));
                 } else {
-                    System.out.println(indent + "F: " + file.getName() + ". Last modified: " + formattedDate);
+                    answer.append(indent).append("F: ").append(file.getName()).append(". Last modified: ").append(formattedDate).append("\n");
                 }
             }
         }
+
+        return answer;
     }
 }
