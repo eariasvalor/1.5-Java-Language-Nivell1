@@ -35,11 +35,26 @@ REQUISITS
    project/  
   ├─ src/  
   │   ├─ main/  
-  │   │   ├─ java/    
-  │   │   │   ├─ n1exercici[X]/    
-  │   │   │   │      ├─ N1Exercici[X].java  
-  │   │   ├─ resources/    
-  │   │   │   ├─ data/          ← directori amb fitxers o subcarpetes de prova
+  │   │   ├─ java/  
+  │   │   │   ├─ common_classes/  
+  │   │   │   ├─ n1exercici1/  
+  │   │   │   ├─ n1exercici2/  
+  │   │   │   ├─ n1exercici3/  
+  │   │   │   ├─ n1exercici4/  
+  │   │   │   ├─ n1exercici5/  
+  │   │   ├─ resources/  
+  │   │   │   ├─ Data.Readmes/  
+  │   │   │   │   ├─ Readme_Ex1.txt  
+  │   │   │   │   ├─ Readme_Ex2.txt  
+  │   │   │   │   ├─ Readme_Ex3.txt  
+  │   │   │   │   ├─ Readme_Ex4.txt  
+  │   │   │   │   ├─ Readme_Ex5.txt  
+  │   │   │   ├─ data/  
+  │   ├─ test/  
+  ├─ target/  
+  ├─ .gitignore  
+  ├─ pom.xml  
+  ├─ README.md
 
 
 COMANDES PER COMPILAR I EXECUTAR
@@ -50,11 +65,11 @@ Totes les comandes s’han d’executar des de la carpeta arrel del projecte.
 1. COMPILAR
 ------------------------------------------------------------
 
-javac -d out src/main/java/n1exercici[X]/N1Exercici[X].java
+javac -d out src/main/java/common_classes/*.java src/main/java/n1exercici[X]/*.java
 
 
 ------------------------------------------------------------
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp out n1exercici[X].N1Exercici[X] src/main/resources/data/[resta de la ruta]
+java -cp out n1exercici[X].N1Exercici[X] src/main/java/[resta de la ruta]
