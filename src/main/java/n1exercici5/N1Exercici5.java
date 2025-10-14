@@ -8,6 +8,12 @@ import java.time.format.DateTimeFormatter;
 
 public class N1Exercici5 {
     public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Error: please specify the directory path as an argument.");
+            System.out.println("Please use: java n1exercici1.N1Exercici1 <directory_path>");
+            return;
+        }
+
         String filePath = (args.length > 0) ? args[0] : System.getProperty("user.dir") + File.separator + "Data" + File.separator + "result.txt";
 
         File file = new File(filePath);
