@@ -21,13 +21,19 @@ REQUISITS
 - El projecte segueix aquesta estructura:
 
    project/
-  ├─ src/
-  │   ├─ main/
-  │   │   ├─ java/
-  │   │   │   └─ n1exercici4/
-  │   │   │       └─ N1Exercici4.java
-  │   │   └─ resources/
-  │   │       └─ data/          ← directori amb fitxers o subcarpetes de prova
+         ├─ src/
+         │   ├─ main/
+         │   │   ├─ java/
+         │   │   │   ├─ common_classes/
+         │   │   │   ├─ n1exercici5/
+         │   │   ├─ resources/
+         │   │   │   ├─ Data.Readmes/
+         │   │   │   │   ├─ Readme_Ex5.txt
+         │   ├─ test/
+         ├─ target/
+         ├─ .gitignore
+         ├─ pom.xml
+         ├─ README.md
 
 
 COMANDES PER COMPILAR I EXECUTAR
@@ -38,11 +44,11 @@ Totes les comandes s’han d’executar des de la carpeta arrel del projecte.
 1. COMPILAR
 ------------------------------------------------------------
 
-javac -d out src/main/java/n1exercici5/*.java
+javac -d out src/main/java/common_classes/*.java src/main/java/n1exercici5/*.java
 
 
 ------------------------------------------------------------
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp src/main/java n1exercici5.N1Exercici5 src/main/resources/Data/Readmes/result.txt
+java -cp src/main/java n1exercici5.N1Exercici5 src/main/java/result.txt

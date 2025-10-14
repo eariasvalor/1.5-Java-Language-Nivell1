@@ -23,14 +23,20 @@ REQUISITS
 - Java 17 o superior instal·lat i configurat al PATH.
 - El projecte segueix aquesta estructura:
 
-   project/
-  ├─ src/
-  │   ├─ main/
-  │   │   ├─ java/
-  │   │   │   └─ n1exercici2/
-  │   │   │       └─ N1Exercici2.java
-  │   │   └─ resources/
-  │   │       └─ data/          ← directori amb fitxers o subcarpetes de prova
+    project/
+       ├─ src/
+       │   ├─ main/
+       │   │   ├─ java/
+       │   │   │   ├─ common_classes/
+       │   │   │   ├─ n1exercici2/
+       │   │   ├─ resources/
+       │   │   │   ├─ Data.Readmes/
+       │   │   │   │   ├─ Readme_Ex2.txt
+       │   ├─ test/
+       ├─ target/
+       ├─ .gitignore
+       ├─ pom.xml
+       ├─ README.md
 
 
 COMANDES PER COMPILAR I EXECUTAR
@@ -41,11 +47,11 @@ Totes les comandes s’han d’executar des de la carpeta arrel del projecte.
 1. COMPILAR
 ------------------------------------------------------------
 
-javac -d out src/main/java/n1exercici2/N1Exercici2.java
+javac -d out src/main/java/common_classes/*.java src/main/java/n1exercici2/*.java
 
 
 ------------------------------------------------------------
 2. EXECUTAR
 ------------------------------------------------------------
 
-java -cp out n1exercici2.N1Exercici2 src/main/resources/data
+java -cp out n1exercici2.N1Exercici2 src/main/java
